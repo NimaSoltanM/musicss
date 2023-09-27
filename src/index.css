@@ -1,0 +1,41 @@
+.music-player-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.music-player {
+  padding: 0 1rem;
+}
+
+audio {
+  width: 80%;
+}
+
+.card {
+  padding: 0.6rem;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card:active {
+  transform: translateY(2px);
+}
+
+.card.active {
+  background: #eef2ff;
+  border: 2px solid #3b82f6;
+  border-radius: 4px;
+}
